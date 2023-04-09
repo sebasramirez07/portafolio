@@ -98,17 +98,17 @@ div.menu a:hover {
     height: 100px;
 }
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-box {
     background-color: transparent;
     width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
+   
 }
 
-/* This container is needed to position the front and back side */
+
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -118,19 +118,19 @@ div.menu a:hover {
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-box-front,
 .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
-    /* Safari */
+   
     backface-visibility: hidden;
 }
 
@@ -147,7 +147,6 @@ div.menu a:hover {
     transform: rotateY(180deg);
 }
 
-/* Make sure that padding behaves as expected */
 * {
     box-sizing: border-box
 }
@@ -245,16 +244,16 @@ div.menu a:hover {
     box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
+
 .column1 {
     float: left;
     width: 33.33%;
     padding: 10px;
     height: 300px;
-    /* Should be removed. Only for demonstration */
+    
 }
 
-/* Clear floats after the columns */
+
 .row1:after {
     content: "";
     display: table;
@@ -262,13 +261,14 @@ div.menu a:hover {
 }
 
 /* Contacto*/
+
 .contacto {
     background-color: #61fa02;
     width: 100%;
     height: 600px;
 }
 
-/* Style all font awesome icons */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -277,24 +277,6 @@ div.menu a:hover {
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa fa-linkedin {
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa fa-google {
-    background: #55ACEE;
-    color: white;
-}
 
 
 /*pie de pagina*/
@@ -324,7 +306,7 @@ div.menu a:hover {
     margin-left: -8px;
 }
 
-/* Style the container with a rounded border, grey background and some padding and margin */
+
 .container1 {
     border: 2px solid transparent;
     background-color: transparent;
@@ -334,27 +316,24 @@ div.menu a:hover {
     margin-left: 300px;
 }
 
-/* Clear floats after containers */
+
 .container1::after {
     content: "";
     clear: both;
     display: table;
 }
 
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
 .container1 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
 }
 
-/* Increase the font-size of a span element */
 .container1 span {
     font-size: 20px;
     margin-right: 15px;
 }
 
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
 @media (max-width: 500px) {
     .container1{
         text-align: center;
